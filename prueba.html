@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Archivos</title>
+</head>
+<body>
+
+    <!-- Formulario para cargar archivos -->
+    <form id="fileUploadForm" enctype="multipart/form-data">
+        <label for="fileInput">Selecciona un archivo:</label>
+        <input type="file" id="fileInput" name="file" accept="image/*, .pdf, .txt">
+        <button type="button" onclick="uploadFile()">Subir Archivo</button>
+    </form>
+
+    <!-- Área para mostrar mensajes de estado -->
+    <div id="status"></div>
+
+    <!-- Lista de archivos cargados -->
+    <ul id="fileList"></ul>
+
+    <!-- Script para la carga de archivos y la lista de archivos cargados -->
+    <script>
+        function uploadFile() {
+            var input = document.getElementById('fileInput');
+            var file = input.files[0];
+
+            if (file) {
+                var formData = new FormData();
+                formData.append('file', file);
+
+                // Aquí deberías realizar una solicitud HTTP (por ejemplo, con AJAX) para subir el archivo al servidor.
+
+                // Ejemplo de mensaje de estado
+                document.getElementById('status').innerHTML = 'Archivo subido: ' + file.name;
+
+                // Agregar el archivo a la lista de archivos cargados
+                var fileList = document.getElementById('fileList');
+                var listItem = document.createElement('li');
+                listItem.appendChild(document.createTextNode(file.name));
+                fileList.appendChild(listItem);
+
+                // Limpiar el campo de entrada
+                input.value = '';
+            } else {
+                document.getElementById('status').innerHTML = 'Por favor, selecciona un archivo.';
+            }
+        }
+    </script>
+
+</body>
+</html>

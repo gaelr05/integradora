@@ -1,0 +1,100 @@
+/* Estilos globales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos para el menú de navegación */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos para el botón desplegable */
+.menu-dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    background-color: #333;
+    color: #fff;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+/* Estilos para el menú desplegable */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 2;
+    right: 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-content a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+/* Estilos para las secciones */
+.welcome, .services, .advantages, .contact {
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.welcome h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+.welcome p {
+    font-size: 18px;
+    color: #666;
+}
+
+.services h2, .advantages h2, .contact h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.services ul, .advantages ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.services li, .advantages li {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}

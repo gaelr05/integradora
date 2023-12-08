@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Calificar Viaje - UTDryving</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">UTDryving</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reservas.html">Reservas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="acerca de nosotros.html">Acerca de Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="calificar.html">Calificar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mostrar_mensajes.php">Mensajes de Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comentarios.php">Comentarios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ver_reservas.php">Reservaciones</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h2>Calificar Viaje</h2>
+        <p>Califica tu último viaje con UTDryving.</p>
+        
+        <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        
+        <p>¡Califica tu experiencia!</p>
+        
+        <!-- Agrega esto después del div con class="rating" -->
+        <form action="guardar_calificacion.php" method="post">
+            <input type="hidden" name="viaje_id" value="ID_DEL_VIAJE">
+            <div class="form-group">
+                <label for="stars">Calificación:</label>
+                <select class="form-control" id="stars" name="stars">
+                    <option value="1">1 estrella</option>
+                    <option value="2">2 estrellas</option>
+                    <option value="3">3 estrellas</option>
+                    <option value="4">4 estrellas</option>
+                    <option value="5">5 estrellas</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="comments">Comentarios:</label>
+                <textarea class="form-control" id="comments" name="comments" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar Calificación</button>
+        </form>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2023 UTDryving</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="pagP.css">
+    <title>UTDryving</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="menu-dropdown">
+                <button class="dropbtn" onclick="toggleDropdown()">&#9660;</button>
+                <div class="dropdown-content" id="myDropdown">
+                    <a href="pagprincipal.html">Inicio</a>
+                    <a href="#contacto">Contáctanos</a>
+                    <a href="#login">Iniciar sesión</a>
+                    <a href="#registro">Regístrate</a>
+                </div>
+            </div>
+            <div class="logo">
+                <img src="" alt="Logo de la empresa">
+            </div>
+        </div>
+    </header>
+    <section class="welcome">
+        <div class="container">
+            <h1>Bienvenido a UTDryving</h1>
+            <p>UTDryving es una plataforma de transporte que conecta a conductores y pasajeros de la comunidad universitaria.</p>
+        </div>
+    </section>
+    <section class="services">
+        <div class="container">
+            <h2>Nuestros Servicios</h2>
+            <ul>
+                <li>Transporte seguro y confiable</li>
+                <li>Conductores de la comunidad universitaria</li>
+                <li>Facilidad de pago a través de la aplicación</li>
+                <li>Mejor y peor para un servicio de transporte en una universidad en la que los estudiantes son los que trabajan</li>
+            </ul>
+        </div>
+    </section>
+    <section class="advantages">
+        <div class "container">
+            <h2>Ventajas</h2>
+            <ul>
+                <li>Comunidad Universitaria Conectada</li>
+                <li>Tarifas más Bajas</li>
+                <li>Conocimiento Local</li>
+                <li>Horarios Flexibles</li>
+                <li>Facilita la Socialización</li>
+            </ul>
+        </div>
+    </section>
+    <section class="disadvantages">
+        <div class="container">
+            <h2>Desventajas</h2>
+            <ul>
+                <li>Falta de Experiencia</li>
+                <li>Inconsistencia en la Disponibilidad</li>
+                <li>Responsabilidad Legal</li>
+                <li>Calidad Variable del Servicio</li>
+                <li>Limitado a la Comunidad Universitaria</li>
+            </ul>
+        </div>
+    </section>
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2>Contacto</h2>
+            <p>Para cualquier duda o comentario, por favor contáctanos a través de nuestro formulario de contacto.</p>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>Todos los derechos reservados &copy; 2023 UTDryving</p>
+            <p>Nos ubicamos en la Universidad Tecnológica de Ciudad Juárez.</p>
+        </div>
+    </footer>
+    
+    <script>
+        function toggleDropdown() {
+            var dropdown = document.getElementById("myDropdown");
+            if (dropdown.style.display === "block") {
+                dropdown.style.display = "none";
+            } else {
+                dropdown.style.display = "block";
+            }
+        }
+        
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.style.display === "block") {
+                        openDropdown.style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

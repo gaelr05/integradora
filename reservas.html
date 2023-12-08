@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="reservas.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Reservar UTDryving</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">UTDryving</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="acerca de nosotros.html">Acerca de Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicios.html">Nuestros Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="calificar.html">Calificar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="comentarios.php">Comentarios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="mostrar_mensajes.php">Mensajes de Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ver_reservas.php">Reservaciones</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </nav>
+
+    <div class="container mt-5">
+        <h2>Reserva de UTDryving</h2>
+        <p>Completa el formulario siguiente para reservar tu transporte.</p>
+        
+        <form action="guardar_reserva.php" method="post">
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre Completo</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" required>
+            </div>
+            
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="fecha" class="form-label">Fecha de Reserva</label>
+                <input type="date" class="form-control" id="fecha" name="fecha" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Reservar Ahora</button>
+            <div class="container mt-5">
+                <h2>Tarifas</h2>
+                <!-- ... (contenido de tarifas) ... -->
+            </div>
+        </form>
+    </div>
+
+    <!-- Mapa de ubicación -->
+    <div class="container mt-5">
+        <h2>Ubicación</h2>
+        <!-- ... (contenido de mapa) ... -->
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2023 UTDryving</p>
+    </footer>
+</body>
+</html>

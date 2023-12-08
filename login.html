@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bienvenido a UTdryving</title>
+        <link rel="stylesheet" href="login.css">
+    </head>
+    <body>
+        <div class="cajafuera">
+            <div class="formulariocaja">
+                <div class="botondeintercambiar">
+                    <div id="btnvai"></div>
+                    <button type="button" class="botoncambiarcaja" onclick="loginvai()" id="vaibtnlogin">Login</button>
+                    <button type="button" class="botoncambiarcaja" onclick="registrarvai()" id="vaibtnregistrar">Registrar</button>
+                </div>
+                <!--Formulario para el login -->
+                <form id="frmlogin" class="grupo-entradas" method="POST" action="login.php">
+                    <!-- Aquí puedes cambiar la imagen -->
+                    <div class="logovai"><img src="escudo.jpg"></div>
+                    <b>&#128231; Correo</b> <!-- Campo para conectar a la base de datos -->
+                    <input type="email" class="cajaentradatexto" name="correo" required placeholder="Por favor, introduzca su correo electrónico">
+                    <b>&#128274; Contraseña</b> <!-- Campo para conectar a la base de datos -->
+                    <input type="password" class="cajaentradatexto" name="contraseña" required placeholder="Por favor, introduzca su contraseña">
+                    <button type="submit" class="botonenviar" name="btnloginx">Iniciar sesión</button>
+                </form>
+                
+                <!--Formulario para registrar -->
+                <form id="frmregistrar" class="grupo-entradas" method="POST" action="registro.php">
+                    <b>&#128231; Correo</b> <!-- Campo para conectar a la base de datos -->
+                    <input type="email" class="cajaentradatexto" required name="correo" placeholder="Por favor, introduzca su correo electrónico">
+                    <b>&#128274; Contraseña</b> <!-- Campo para conectar a la base de datos -->
+                    <input type="password" class="cajaentradatexto" required name="contraseña" placeholder="Por favor, introduzca su contraseña">
+                    </i>&#128100;<b> Nombre</b> <!-- Campo para conectar a la base de datos -->
+                    <input type="text" class="cajaentradatexto" required name="nombre" placeholder="Por favor, introduzca su nombre">
+                    <div class="checkboxvai"><input type="checkbox" required> Acepto los términos y condiciones de uso.</div>
+                    <button type="submit" class="botonenviar" name="btnregistrarx">Registrar</button>
+                </form>
+            </div>
+        </div>
+        <script>
+            var x = document.getElementById("frmlogin");
+            var y = document.getElementById("frmregistrar");
+            var z = document.getElementById("btnvai");
+            var textcolor1 = document.getElementById("vaibtnlogin");
+            var textcolor2 = document.getElementById("vaibtnregistrar");
+            textcolor1.style.color = "white";
+            textcolor2.style.color = "black";
+            function registrarvai() {
+                x.style.left = "-400px";
+                y.style.left = "50px";
+                z.style.left = "110px";
+                textcolor1.style.color = "black";
+                textcolor2.style.color = "white";
+            }
+            function loginvai() {
+                x.style.left = "50px";
+                y.style.left = "450px";
+                z.style.left = "0";
+                textcolor1.style.color = "white";
+                textcolor2.style.color = "black";
+            }
+        </script>
+    </body>
+</html>

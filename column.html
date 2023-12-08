@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejemplo de Columnas en HTML</title>
+    <style>
+        /* Estilos para las columnas */
+        .tabla {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .tabla th, .tabla td {
+            border: 1px solid #cccccc;
+            padding: 10px;
+            transition: background-color 0.3s; /* Transición para el color de fondo */
+        }
+
+        .tabla th:hover, .tabla td:hover {
+            background-color: #3498db; /* Cambia el color de fondo al pasar el cursor */
+        }
+
+        .columna1 {
+            width: 30%;
+            background-color: #e0e0e0;
+        }
+
+        .columna2 {
+            width: 40%;
+            background-color: #f0f0f0;
+        }
+
+        .columna3 {
+            width: 30%;
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ejemplo de Columnas en HTML</h1>
+
+    <!-- Tabla con columnas -->
+    <table class="tabla">
+        <tr>
+            <th class="columna1">Columna 1</th>
+            <th class="columna2">Columna 2</th>
+            <th class="columna3">Columna 3</th>
+        </tr>
+        <tr>
+            <td class="columna1">Contenido 1</td>
+            <td class="columna2">Contenido 2</td>
+            <td class="columna3">Contenido 3</td>
+        </tr>
+        <tr>
+            <td class="columna1">Contenido 4</td>
+            <td class="columna2">Contenido 5</td>
+            <td class="columna3">Contenido 6</td>
+        </tr>
+    </table>
+</body>
+</html>

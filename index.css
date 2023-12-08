@@ -1,0 +1,20 @@
+/* Agrega tu CSS personalizado aquí, si es necesario */
+
+body {
+  background-color: #f0f0f0;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+footer {
+  margin-top: 20px;
+}

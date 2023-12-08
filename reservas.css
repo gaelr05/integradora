@@ -1,0 +1,70 @@
+body {
+    background-color: #333; /* Gris oscuro para el fondo */
+    color: #fff; /* Letras en blanco */
+}
+
+.container {
+    background-color: #444; /* Fondo ligeramente más oscuro para el contenedor */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+footer {
+    margin-top: 20px;
+}
+div{
+    color: white;
+}
+/* Estilos generales */
+
+/* Estilos para la barra de navegación */
+.navbar {
+    background-color: #333;
+    color: #fff;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.nav-link {
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+.nav-link:hover {
+    color: #ffd700; /* Color amarillo al pasar el cursor */
+}
+
+/* Estilos para las secciones de servicios */
+.servicio {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.servicio:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el cursor */
+}
+
+.servicio h2 {
+    color: #333;
+    font-weight: bold;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
